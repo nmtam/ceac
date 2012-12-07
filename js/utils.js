@@ -7,9 +7,20 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		makeDecoFullsize('#page_deco_img');
 	});
+	
+	addOnLoadEvent(function(){
+		addSpanDeco();						
+	});
 });
 
 
+function addSpanDeco(){
+	$('.add_span').each(function(){
+		var obj = $(this);
+		var child = $(obj.attr('data-child'), obj);
+		child.prepend('<span></span>');
+	});
+}
 function makeDecoFullsize(id) {
 	var imgageHolder = $(id);
 
@@ -41,7 +52,8 @@ function makeDecoFullsize(id) {
 	}
 }
 
-// add event to window.onload so they don't overwrite each other. Given func will be executed after content is loaded
+// Add event to window.onload so they don't overwrite each other. 
+// Given func will be executed after content is loaded
 function addOnLoadEvent(func){
 	if (window.addEventListener){
 		window.addEventListener('load', func, false); 

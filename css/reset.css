@@ -34,8 +34,8 @@ table tr:nth-child(even) {
 }
 
 .fe IMG{border:none}
-.fe A{text-decoration:none; color:#004a80; outline:none;}
-.fe A:hover{text-decoration:none; color:#ce171f;}
+.fe A{text-decoration:none; color:#363636; outline:none;}
+.fe A:hover{text-decoration:none; color:#f7941d;}
 .fe UL{list-style-type:none}
 .fe TD{padding:0; vertical-align:top;}
 .fe P{line-height:130%; padding:3px 0 5px 0;}
