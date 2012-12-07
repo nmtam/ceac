@@ -1,0 +1,17 @@
+.fe{
+	font:14px/16.5px Arial, serif;
+	color:#363636;
+}
+
+.fe #page_deco_img{
+	line-height: 0px;
+	position: fixed; z-index:-1;
+	overflow: hidden;
+}
+.fe #page_deco_img .main_image {
+	position: absolute;
+}
+
+.fe #site_wrapper{
+	position:relative;
+}
