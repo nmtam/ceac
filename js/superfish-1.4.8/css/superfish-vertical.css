@@ -1,12 +1,12 @@
 /*** adding sf-vertical in addition to sf-menu creates a vertical menu ***/
 .sf-vertical, .sf-vertical li {
-	width:	10em;
+	width: 235px;
 }
 /* this lacks ul at the start of the selector, so the styles from the main CSS file override it where needed */
 .sf-vertical li:hover ul,
 .sf-vertical li.sfHover ul {
-	left:	10em; /* match ul width */
-	top:	0;
+	left:	265px; /* match ul width */
+	top:	-27px;
 }
 
 /*** alter arrow directions ***/
@@ -21,3 +21,61 @@
 .sf-vertical li.sfHover > a > .sf-sub-indicator {
 	background-position: -10px 0; /* arrow hovers for modern browsers*/
 }
+
+/*overwrite*/
+.sf-vertical > li {width:485px;}
+.sf-vertical li ul,
+.sf-vertical li ul li{width:275px;}
+
+.sf-vertical .sub .deco_top{
+	width:275px; height:16px;
+	background:url(../../../css/imgs/content_sprite.png) no-repeat 0 -137px;
+}
+.sf-vertical .sub .deco_bottom{
+	width:275px; height:16px;
+	background:url(../../../css/imgs/content_sprite.png) no-repeat 0 -153px;
+}
+.sf-menu > li > a{
+	padding-left:70px;
+}
+.sf-menu > li > a > span.left_deco{
+	position:absolute; width:40px; height:33px;
+	background:url(../../../css/imgs/content_sprite.png) no-repeat;
+	left:15px; top:0;
+}
+
+.sf-menu > li > a.ico_0 > span.left_deco{background-position:0 -71px;}
+.sf-menu > li > a.ico_0:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_0 > span.left_deco{background-position:0 -104px;}
+
+.sf-menu > li > a.ico_1 > span.left_deco{background-position:-40px -71px;}
+.sf-menu > li > a.ico_1:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_1 > span.left_deco{background-position:-40px -104px;}
+
+.sf-menu > li > a.ico_2 > span.left_deco{background-position:-80px -71px;}
+.sf-menu > li > a.ico_2:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_2 > span.left_deco{background-position:-80px -104px;}
+
+.sf-menu > li > a.ico_3 > span.left_deco{background-position:-120px -71px;}
+.sf-menu > li > a.ico_3:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_3 > span.left_deco{background-position:-120px -104px;}
+
+.sf-menu > li > a.ico_4 > span.left_deco{background-position:-160px -71px;}
+.sf-menu > li > a.ico_4:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_4 > span.left_deco{background-position:-160px -104px;}
+
+.sf-menu > li > a.ico_5 > span.left_deco{background-position:-200px -71px;}
+.sf-menu > li > a.ico_5:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_5 > span.left_deco{background-position:-200px -104px;}
+
+.sf-menu > li > a.ico_6 > span.left_deco{background-position:-240px -71px;}
+.sf-menu > li > a.ico_6:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_6 > span.left_deco{background-position:-240px -104px;}
+
+.sf-menu > li > a.ico_7 > span.left_deco{background-position:-280px -71px;}
+.sf-menu > li > a.ico_7:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_7 > span.left_deco{background-position:-280px -104px;}
+
+.sf-menu > li > a.ico_8 > span.left_deco{background-position:-320px -71px;}
+.sf-menu > li > a.ico_8:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_8 > span.left_deco{background-position:-320px -104px;}
+
+.sf-menu > li > a.ico_9 > span.left_deco{background-position:-360px -71px;}
+.sf-menu > li > a.ico_9:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_9 > span.left_deco{background-position:-360px -104px;}
+
+.sf-menu > li > a.ico_10 > span.left_deco{background-position:-400px -71px;}
+.sf-menu > li > a.ico_10:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_10 > span.left_deco{background-position:-400px -104px;}
+
+.sf-menu > li > a.ico_11 > span.left_deco{background-position:-440px -71px;}
+.sf-menu > li > a.ico_11:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_11 > span.left_deco{background-position:-440px -104px;}

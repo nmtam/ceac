@@ -80,7 +80,7 @@ footer{
 .fe #top li:hover a{
 	display:block; width:96px; text-align:center;
 	font:bold 14px/96px Arial; color:#fff; text-transform:uppercase;
-	text-indent:none;
+	text-indent:0;
 }
 .fe #top li.active a{font-size:0px;}
 .fe #top li i{
@@ -170,12 +170,3 @@ footer{
 }
 #top_use ul li:hover .remove{display:block;}
 /* end of Top use */
-
-/* Main bssiness *
-.fe #bussiness .level_1 li{
-	background-color:#ebebeb; height:33px;
-	margin:3px 0 0 0;
-	-webkit-border-radius: 3px;
-    border-radius: 3px;
-}
-/* end of Main bssiness /*

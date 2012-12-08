@@ -16,9 +16,14 @@ $(document).ready(function(){
 function initSuperfishMenu(){
 	var sf = $('.sf-menu');
 	if (sf.length > 0) {
+		// add deco LI
+		$('.sf-menu .sub').prepend('<li class="deco_top"></li>').append('<li class="deco_bottom"></li>');
+		// init SUPERFISH
 		sf.superfish({ 
 			animation: {height:'show'},
-			delay: 800 // don't hide menu when mouse-out
+			delay: 80000, // don't hide menu when mouse-out
+			disableHI: true,
+			dropShadows: false
 		}); 
 	}
 }
@@ -27,8 +32,11 @@ function _addSpanDeco(){
 		var obj = $(this);
 		var child = $(obj.attr('data-child'), obj);
 		var method = parseInt(obj.attr('data-dir')); //0: append, 1: prepend
-		if (method == 0) child.append('<span></span>');
-		else child.prepend('<span></span>');
+		var span_class = obj.attr('data-class');
+		if (span_class) var html = '<span class="'+span_class+'"></span>';
+		else var html = '<span></span>';
+		if (method == 0) child.append(html);
+		else child.prepend(html);
 	});
 }
 
