@@ -1,55 +1,39 @@
+/*
+ * Quy uoc: cac ham bat dau voi _ deu la cac ham xu ly giao dien
+ */
+
 $(document).ready(function(){
 
-	/*
-	 * process fullsize background image on splash page
-	 */
-	makeDecoFullsize('#page_deco_img');
-	$(window).resize(function(){
-		makeDecoFullsize('#page_deco_img');
-	});
+	initSuperfishMenu();
 	
 	addOnLoadEvent(function(){
-		addSpanDeco();						
+		_addSpanDeco();
+		_addTopNAVActiveIndicator();
 	});
 });
 
 
-function addSpanDeco(){
+function initSuperfishMenu(){
+	var sf = $('.sf-menu');
+	if (sf.length > 0) {
+		sf.superfish({ 
+			animation: {height:'show'},
+			delay: 800 // don't hide menu when mouse-out
+		}); 
+	}
+}
+function _addSpanDeco(){
 	$('.add_span').each(function(){
 		var obj = $(this);
 		var child = $(obj.attr('data-child'), obj);
-		child.prepend('<span></span>');
+		var method = parseInt(obj.attr('data-dir')); //0: append, 1: prepend
+		if (method == 0) child.append('<span></span>');
+		else child.prepend('<span></span>');
 	});
 }
-function makeDecoFullsize(id) {
-	var imgageHolder = $(id);
 
-	if (imgageHolder.length == 1) {
-		var w=1280, h=700;
-		var navWidth = $(window).width();
-		var navHeight = $(window).height();
-		var navRatio = navWidth / navHeight;
-	
-		var mainImage = $('.main_image');
-		if (mainImage.width() > 1) w = mainImage.width();
-		if (mainImage.height() > 1) h = mainImage.height();
-		picRatio = w / h;
-		
-		if (navRatio > picRatio) {
-			var newHeight = (navWidth / w) * h;
-			var newWidth = navWidth;
-		} else {
-			var newHeight = navHeight;
-			var newWidth = (navHeight / h) * w;
-		}
-
-		newTop = 0 - ((newHeight - navHeight) / 2);
-		newTop = 0;
-		newLeft =  0 - ((newWidth - navWidth) / 2);
-
-		imgageHolder.css({height: navHeight, width: navWidth});
-		mainImage.css({height: newHeight, width: newWidth, top: newTop, left: newLeft});
-	}
+function _addTopNAVActiveIndicator(){
+	$('#top .active').append('<i></i>');
 }
 
 // Add event to window.onload so they don't overwrite each other. 

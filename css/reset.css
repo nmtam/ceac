@@ -84,3 +84,5 @@ table tr:nth-child(even) {
 .clearfix {
     *zoom: 1;
 }
+
+.add_span{}
