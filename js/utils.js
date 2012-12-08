@@ -18,6 +18,7 @@ function initSuperfishMenu(){
 	if (sf.length > 0) {
 		// add deco LI
 		$('.sf-menu .sub').prepend('<li class="deco_top"></li>').append('<li class="deco_bottom"></li>');
+		
 		// init SUPERFISH
 		sf.superfish({ 
 			animation: {height:'show'},

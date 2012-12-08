@@ -10,11 +10,11 @@ footer{
 /* Top controller */
 #top_controller ul {
 	float:right;
-	margin:10px 15px 0 0;
+	margin:0 15px 0 0;
 }
 #top_controller ul li{
 	float:left;
-	margin-right:1px; padding:0 10px;
+	margin-right:1px; padding:12px 10px 5px 10px;
 }
 #top_controller ul li:hover{background-color:#f7941d}
 #top_controller ul li.user{padding-right:0;}
@@ -131,7 +131,7 @@ footer{
 	margin:10px 0 5px 15px;
 }
 #top_use ul li{
-	padding:10px 0 20px 45px; 
+	padding:10px 0 8px 45px; 
 	position:relative;
 }
 #top_use > ul > li span{

@@ -6,34 +6,34 @@
 .sf-vertical li:hover ul,
 .sf-vertical li.sfHover ul {
 	left:	265px; /* match ul width */
-	top:	-27px;
+	top:	-30px;
 }
 
 /*** alter arrow directions ***/
-.sf-vertical .sf-sub-indicator { background-position: -10px 0; } /* IE6 gets solid image only */
-.sf-vertical a > .sf-sub-indicator { background-position: 0 0; } /* use translucent arrow for modern browsers*/
+/*.sf-vertical .sf-sub-indicator { background-position: -10px 0; } /* IE6 gets solid image only */
+/*.sf-vertical a > .sf-sub-indicator { background-position: 0 0; } /* use translucent arrow for modern browsers*/
 
-/* hover arrow direction for modern browsers*/
+/* hover arrow direction for modern browsers
 .sf-vertical a:focus > .sf-sub-indicator,
 .sf-vertical a:hover > .sf-sub-indicator,
 .sf-vertical a:active > .sf-sub-indicator,
 .sf-vertical li:hover > a > .sf-sub-indicator,
 .sf-vertical li.sfHover > a > .sf-sub-indicator {
-	background-position: -10px 0; /* arrow hovers for modern browsers*/
+	background-position: -10px 0; 
 }
-
+*/
 /*overwrite*/
 .sf-vertical > li {width:485px;}
 .sf-vertical li ul,
 .sf-vertical li ul li{width:275px;}
 
 .sf-vertical .sub .deco_top{
-	width:275px; height:16px;
+	width:275px; height:23px;
 	background:url(../../../css/imgs/content_sprite.png) no-repeat 0 -137px;
 }
 .sf-vertical .sub .deco_bottom{
-	width:275px; height:16px;
-	background:url(../../../css/imgs/content_sprite.png) no-repeat 0 -153px;
+	width:275px; height:23px;
+	background:url(../../../css/imgs/content_sprite.png) no-repeat 0 -160px;
 }
 .sf-menu > li > a{
 	padding-left:70px;
@@ -79,3 +79,39 @@
 
 .sf-menu > li > a.ico_11 > span.left_deco{background-position:-440px -71px;}
 .sf-menu > li > a.ico_11:hover > span.left_deco, .sf-menu > li.sfHover > a.ico_11 > span.left_deco{background-position:-440px -104px;}
+
+.sf-vertical .sub li a{
+	display:block;
+	font: 14px/30px Arial; color:#363636;
+	margin:0 24px 1px 24px;
+	padding-left:15px;
+	
+	
+	
+	border-top: solid 2px #fff;
+	border-bottom: solid 2px #fff;
+	position: relative;
+	z-index: 1;
+	
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.sf-vertical .sub li a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -3px;
+	left: 0;
+	border-top: solid 1px #e1e1e1;
+	
+	width: 100%;
+	padding: 2px 0 1px 0;
+	min-height: 100%;
+	z-index: 10;
+}
+.sf-vertical .sub li:first-child + li a:before{
+	display:none;
+}
+
+.sf-vertical .sub li a:hover{background-color:#39a0e5; color:#fff;}
+.sf-vertical .sub li.sfHover > a{background-color:#0e76bc; color:#fff;}
