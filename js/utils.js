@@ -3,7 +3,7 @@
  */
 
 var popup_w = 1000,
-	popup_h = 800;
+	popup_h = 720;
 var main_biz_delay = 900000; // 15 min
 
 $(document).ready(function(){
