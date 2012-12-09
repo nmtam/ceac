@@ -3,9 +3,10 @@
 	color:#363636; 
 	background-color:#ebebeb;
 }
-footer{
+#footer{
 	text-align:center;
 	font-size:10px; color:#898989;
+	margin-bottom:10px;
 }
 /* Top controller */
 #top_controller ul {
