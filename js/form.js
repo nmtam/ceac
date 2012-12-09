@@ -6,7 +6,7 @@ $(document).ready(function(){
 		_preventHashAnchor();
 		_addSpanDeco();
 		
-		_resizeWindow();
+		//_resizeWindow();
 	});
 });
 
@@ -23,14 +23,11 @@ function initTableBottomBtn(){
 }
 
 function _resizeWindow(){
-	//var w = $(window).width();
-	//var h = $(window).height();
 	var w = $(window).width();
 	var h = $('.fe').height();
-	//var n_h = $('.fe').height();
-	console.log(w, h);
-	
-	window.resizeTo(w+16, h+90);
+	//console.log(w, h);
+	$(window).height(h-400);
+	//window.resizeTo(w+40, h+100);
 }
  
  
