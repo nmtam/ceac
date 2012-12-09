@@ -85,8 +85,7 @@
 	font: 14px/30px Arial; color:#363636;
 	margin:0 24px 1px 24px;
 	padding-left:15px;
-	
-	
+	padding-right:15px;
 	
 	border-top: solid 2px #fff;
 	border-bottom: solid 2px #fff;
@@ -113,5 +112,21 @@
 	display:none;
 }
 
-.sf-vertical .sub li a:hover{background-color:#39a0e5; color:#fff;}
+.sf-vertical .sub li a:hover{background-color:#f7941d; color:#fff;}
 .sf-vertical .sub li.sfHover > a{background-color:#0e76bc; color:#fff;}
+
+.sf-vertical  > li > .sub > .deco_top span{
+	position:absolute; width:21px; height:26px;
+	background:url(../../../css/imgs/content_sprite.png) no-repeat -301px -137px;
+	left:-7px; top:33px; z-index:99;
+}
+.sf-vertical .sub li a .make_shortcut{
+	position:absolute; top:6px; right:7px; z-index:14;
+	width:19px; height:18px;
+	background:url(../../../css/imgs/content_sprite.png) no-repeat -350px -17px;
+	display:none;
+}
+.sf-vertical .sub li:hover a .make_shortcut,
+.sf-vertical .sub li.sfHover > a > .make_shortcut{
+	display:block;
+}

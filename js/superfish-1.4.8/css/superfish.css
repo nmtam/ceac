@@ -49,7 +49,7 @@ ul.sf-menu li li.sfHover li ul {
 }
 ul.sf-menu li li li:hover ul,
 ul.sf-menu li li li.sfHover ul {
-	left:			230px; 
+	left:			250px; 
 	top:			-23px;
 }
 
@@ -113,15 +113,15 @@ ul.sf-menu li li li.sfHover ul {
 	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
 }
 .sf-sub-indicator {
-	position:		absolute;
+	position:		absolute; z-index:15;
 	display:		block;
-	right:			.75em;
-	top:			9px;
-	width:			9px;
-	height:			14px;
-	text-indent: 	-9px;
+	right:			6px;
+	top:			7px;
+	width:			19px;
+	height:			18px;
+	text-indent: 	-19px;
 	overflow:		hidden;
-	background:url(../../../css/imgs/content_sprite.png) no-repeat -280px -137px;
+	background:url(../../../css/imgs/content_sprite.png) no-repeat -275px -137px;
 }
 /*a > .sf-sub-indicator { 
 	top:			.8em;
@@ -132,9 +132,11 @@ ul.sf-menu li li li.sfHover ul {
 a:focus > .sf-sub-indicator,
 a:hover > .sf-sub-indicator,
 a:active > .sf-sub-indicator,
-li:hover > a > .sf-sub-indicator,
+li:hover > a > .sf-sub-indicator{
+	background-position: -275px -173px;
+}
 li.sfHover > a > .sf-sub-indicator {
-	background-position: -289px -137px; /* arrow hovers for modern browsers*/
+	background-position: -275px -155px; 
 }
 
 /* point right for anchors in subs 

@@ -133,7 +133,10 @@ footer{
 #top_use ul li{
 	padding:10px 0 8px 45px; 
 	position:relative;
+	cursor:pointer;
+	margin-bottom:5px;
 }
+#top_use > ul > li{}
 #top_use > ul > li span{
 	position:absolute; width:19px; height:17px;
 	top:10px; left:15px;
@@ -164,9 +167,12 @@ footer{
 }
 #top_use ul li .remove {
 	display:none;
-	position:absolute; top:7px; right:7px; z-index:5;
+	position:absolute; top:7px; right:7px; z-index:15;
 	width:20px; height:20px;
 	background:url(imgs/content_sprite.png) no-repeat -392px -1px;
 }
 #top_use ul li:hover .remove{display:block;}
+#top_use ul li .remove:hover{
+	background-position:-412px -1px;
+}
 /* end of Top use */
