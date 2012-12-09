@@ -1,3 +1,47 @@
 .fe {
 	background-color:#ebebeb;
+	font:normal 14px/16px Arial; color:#363636;
 }
+#form_header {
+	height:53px; border-bottom:1px solid #fff;
+	background-color:#898989;
+}
+
+#form_content .left_col{
+	width:625px; 
+	float:left; margin:0 13px 0 0;
+}
+#form_content .right_col{
+	width:342px; float:left;
+}
+
+/* Form header */
+#form_header{
+	background: rgb(137,137,137);
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg5ODk4OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2MzYzNjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgb(137,137,137) 0%, rgb(99,99,99) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(137,137,137)), color-stop(100%,rgb(99,99,99)));
+background: -webkit-linear-gradient(top,  rgb(137,137,137) 0%,rgb(99,99,99) 100%);
+background: -o-linear-gradient(top,  rgb(137,137,137) 0%,rgb(99,99,99) 100%);
+background: -ms-linear-gradient(top,  rgb(137,137,137) 0%,rgb(99,99,99) 100%);
+background: linear-gradient(to bottom,  rgb(137,137,137) 0%,rgb(99,99,99) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', endColorstr='#636363',GradientType=0 );
+}
+#form_header h1{
+	float:left;
+	font-size:24px; color:#fff;
+}
+#form_header .more_info {
+	float:right;
+}
+#form_header .support {
+	float:right; margin-left:25px;
+}
+#form_header .support li{
+	float:left;
+	text-indent:-100px; overflow:hidden;
+}
+#form_header .support li .help{
+	display:block; width:22px; height:22px;
+}
+/* end of Form header */
