@@ -5,7 +5,7 @@
 .sf-vertical li:hover ul,
 .sf-vertical li.sfHover ul {
 	left:	265px; /* match ul width */
-	top:	-30px;
+	top:	-24px;
 }
 
 .sf-vertical > li {width:485px;}
@@ -103,7 +103,7 @@
 .sf-vertical  > li > .sub > .deco_top span{
 	position:absolute; width:21px; height:26px;
 	background:url(../../../css/imgs/content_sprite.png) no-repeat -301px -137px;
-	left:-7px; top:33px; z-index:99;
+	left:-7px; top:28px; z-index:99;
 }
 .sf-vertical .sub li a .make_shortcut{
 	position:absolute; top:6px; right:4px; z-index:14;

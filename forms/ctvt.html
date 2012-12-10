@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Chứng từ vật tư | CMC Enterprise resource planning</title>
+<link rel="shortcut icon" href="../CEAC_favicon.ico" >
+    <!--[if lt IE 8]>
+    <script src="js/ie7/IE8.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+    <style type="text/css">
+    .gradient {filter: none;}
+    </style>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/jquery.jscrollpane.css" />
+    <link rel="stylesheet" href="../css/form.css" />
+</head>
+<body class="fe">
+	<div id="popup_wrapper">
+        <div id="form_header" class="clearfix gradient">
+            <h1>Chứng từ vật tư</h1>
+            
+            <div class="support">
+                <ul>
+                    <li class="help"><a href="#">Help</a></li>
+                    <li class="feedback"><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="more_info">
+                <span class="datetime">
+                    <span class="deco"></span>
+                    Hạch toán <strong>28/09/2012</strong>
+                </span>
+                <ul class="btn black">
+                    <li class="active"><a href="#">Tổng hợp</a></li>
+                    <li><a href="#">Tren</a></li>
+                    <li><a href="#">Khác</a></li>
+                </ul>
+                <ul class="btn black">
+                    <li class="active"><a href="#">Người SD</a></li>
+                    <li><a href="#">Tất cả</a></li>
+                    <li><a href="#">Khác</a></li>
+                </ul>
+    
+                <span class="btn white">KT</span>
+                
+                <span class="deco_right"></span>
+            </div>
+        </div>
+        
+        <div id="form_content" class="clearfix">
+            <div class="left_col left_1">
+                <form method="post" autocomplete="off">
+                    <div class="paragraph">
+                        <div class="line clearfix">
+                            <label>Loại Chứng từ <span>*</span></label>
+                            <select class="w_215 blue">
+                                <option>Nhập kho</option>
+                                <option>Xuất kho</option>
+                            </select>
+                        </div>
+                        
+                        <div class="line clearfix">
+                            <label>Số TT</label>
+                            <input type="text" class="w_85" value="">
+                         	<label class="w_43 type_4">Số CT</label>
+                            <input type="text" class="w_110" value="">
+                            <label class="w_60 type_5">Ngày CT</label>
+                            <input type="text" class="w_110" value="09/10/2012">
+                        </div>
+                        <div class="line clearfix">
+                            <label>Khách hàng</label>
+                            <input type="text" class="w_29 m_0_4_0_0" value="K">
+                            <input type="text" class="w_128" value="">
+                            
+                         	<label class="w_66 type_6">Họ tên</label>
+                            <input type="text" class="w_295" value="">
+                        </div>
+                        <div class="line clearfix">
+                            <label>Mã thuế</label>
+                            <input type="text" class="w_161" value="">
+                            
+                         	<label class="w_66 type_6">Địa chỉ</label>
+                            <input type="text" class="w_295" value="">
+                        </div>
+                        <div class="line clearfix">
+                        	<label>Mã N.tệ <span>*</span></label>
+                            <input type="text" class="w_53" value="VND">
+                            <label class="w_50 type_3">Tỷ giá <span>*</span></label>
+                            <input type="text" class="w_85">
+                            <label class="w_66 type_5">H.thức TT</label>
+                            <select class="w_104 blue">
+                                <option>Tiền mặt</option>
+                                <option>Chuyển khoản</option>
+                                <option>Khác</option>
+                            </select>
+                            <label class="w_56 type_3">Mã t.Đổi</label>
+                            <input type="text" class="w_29 m_0_4_0_0" value="K">
+                            <input type="text" class="w_62">
+                        </div>
+                        <div class="line clearfix">
+                            <label>Nội dung</label>
+                            <input type="text" class="w_303" value="">
+                            
+                         	<label class="w_73 type_4">Số T.chiếu</label>
+                            <input type="text" class="w_150" value="">
+                        </div>
+                    </div>
+                    <div class="paragraph bg_d7d7d7">
+                        <table class="listing_3" cellpadding="0" cellspacing="1" border="0">
+                        	<tr>
+                            	<th class="cc w_57">Kho</th>
+                                <th class="w_194">Tên vật tư</th>
+                                <th class="w_89">Lượng</th>
+                                <th class="w_73">Giá</th>
+                                <th class="w_78">Tiền</th>
+                                <th class="w_95">Kho #</th>
+                            </tr>
+                        </table>
+                        <div class="jsPanel" style="height:79px;">
+                            <table class="listing_3 bg_d7d7d7" cellpadding="0" cellspacing="1" border="0">
+                                <tr>
+                                    <td><input type="text" class="w_62 cc" value="N"></td>
+                                    <td><input type="text" class="w_199"></td>
+                                    <td><input type="text" class="w_94"></td>
+                                    <td><input type="text" class="w_77"></td>
+                                    <td><input type="text" class="w_82"></td>
+                                    <td><input type="text" class="w_100"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_62 cc" value="N"></td>
+                                    <td><input type="text" class="w_199"></td>
+                                    <td><input type="text" class="w_94"></td>
+                                    <td><input type="text" class="w_77"></td>
+                                    <td><input type="text" class="w_82"></td>
+                                    <td><input type="text" class="w_100"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_62 cc" value="N"></td>
+                                    <td><input type="text" class="w_199"></td>
+                                    <td><input type="text" class="w_94"></td>
+                                    <td><input type="text" class="w_77"></td>
+                                    <td><input type="text" class="w_82"></td>
+                                    <td><input type="text" class="w_100"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_62 cc" value="N"></td>
+                                    <td><input type="text" class="w_199"></td>
+                                    <td><input type="text" class="w_94"></td>
+                                    <td><input type="text" class="w_77"></td>
+                                    <td><input type="text" class="w_82"></td>
+                                    <td><input type="text" class="w_100"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_62 cc" value="N"></td>
+                                    <td><input type="text" class="w_199"></td>
+                                    <td><input type="text" class="w_94"></td>
+                                    <td><input type="text" class="w_77"></td>
+                                    <td><input type="text" class="w_82"></td>
+                                    <td><input type="text" class="w_100"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_62 cc" value="N"></td>
+                                    <td><input type="text" class="w_199"></td>
+                                    <td><input type="text" class="w_94"></td>
+                                    <td><input type="text" class="w_77"></td>
+                                    <td><input type="text" class="w_82"></td>
+                                    <td><input type="text" class="w_100"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_62 cc" value="N"></td>
+                                    <td><input type="text" class="w_199"></td>
+                                    <td><input type="text" class="w_94"></td>
+                                    <td><input type="text" class="w_77"></td>
+                                    <td><input type="text" class="w_82"></td>
+                                    <td><input type="text" class="w_100"></td>
+                                </tr>
+                            </table>
+                        </div>
+
+						<div class="clearfix">
+                        	<a href="#" class="act_themchitiet">+ Thêm chi tiết</a>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <div class="line clearfix">
+                        	<label class="w_67">Giảm giá</label>
+                            <input type="text" class="w_59 m_0_2_0_0">
+                            <input type="text" class="w_56" >
+                            
+                            <label class="w_57 type_7">Phí khác</label>
+                            <input type="text" class="w_82">
+                            
+                            <label class="w_41 type_8">G.vốn</label>
+                            <input type="text" class="w_82">
+
+                            <label class="w_46 type_9">Tiền</label>
+                            <input type="text" class="w_129">
+                        </div>
+                        <div class="line clearfix">
+                        	<label class="w_67">Thuế</label>
+                            <input type="text" class="w_28 m_0_2_0_0" value="C">
+                            <input type="text" class="w_29 m_0_2_0_0" value="K">
+                            <input type="text" class="w_56" >
+                            
+                            <label class="w_57 type_7">Số h.đơn</label>
+                            <input type="text" class="w_214">
+                            
+                            <label class="w_42 type_8">T.Toán</label>
+                            <input type="text" class="w_129">
+                        </div>
+                    </div>
+                    
+                    <div class="relative listing W_639">
+                        <table cellpadding="0" cellspacing="0" border="0" class="listing W_639">
+                            <tr>
+                                <th class="cc w_67">PS</th>
+                                <th class="w_124">Tài khoản</th>
+                                <th class="w_111">Thống kê</th>
+                                <th class="w_94">Số tiền</th>
+                                <th class="w_215">Diễn giải</th>
+                            </tr>
+                        </table>
+                        
+                        <div class="jsPanel" style="height:79px;">
+                            <table cellpadding="0" cellspacing="0" border="0" class="listing W_639">
+                                <tr>
+                                    <td><input type="text" class="w_72 cc" value="N"></td>
+                                    <td><input type="text" class="w_129" value="011923"></td>
+                                    <td><input type="text" class="w_115" value="KYPSR"></td>
+                                    <td><input type="text" class="w_99" value="2.350.540"></td>
+                                    <td><input type="text" class="w_220" value="Đang nhập dữ liệu"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_72 cc" value="N"></td>
+                                    <td><input type="text" class="w_129" value="011923"></td>
+                                    <td><input type="text" class="w_115" value="KYPSR"></td>
+                                    <td><input type="text" class="w_99" value="2.350.540"></td>
+                                    <td><input type="text" class="w_220" value="Đang nhập dữ liệu"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_72 cc" value="N"></td>
+                                    <td><input type="text" class="w_129" value="011923"></td>
+                                    <td><input type="text" class="w_115" value="KYPSR"></td>
+                                    <td><input type="text" class="w_99" value="2.350.540"></td>
+                                    <td><input type="text" class="w_220" value="Đang nhập dữ liệu"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_72 cc" value="N"></td>
+                                    <td><input type="text" class="w_129" value="011923"></td>
+                                    <td><input type="text" class="w_115" value="KYPSR"></td>
+                                    <td><input type="text" class="w_99" value="2.350.540"></td>
+                                    <td><input type="text" class="w_220" value="Đang nhập dữ liệu"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_72 cc" value="N"></td>
+                                    <td><input type="text" class="w_129" value="011923"></td>
+                                    <td><input type="text" class="w_115" value="KYPSR"></td>
+                                    <td><input type="text" class="w_99" value="2.350.540"></td>
+                                    <td><input type="text" class="w_220" value="Đang nhập dữ liệu"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_72 cc" value="N"></td>
+                                    <td><input type="text" class="w_129" value="011923"></td>
+                                    <td><input type="text" class="w_115" value="KYPSR"></td>
+                                    <td><input type="text" class="w_99" value="2.350.540"></td>
+                                    <td><input type="text" class="w_220" value="Đang nhập dữ liệu"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" class="w_72 cc" value="N"></td>
+                                    <td><input type="text" class="w_129" value="011923"></td>
+                                    <td><input type="text" class="w_115" value="KYPSR"></td>
+                                    <td><input type="text" class="w_99" value="2.350.540"></td>
+                                    <td><input type="text" class="w_220" value="Đang nhập dữ liệu"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table cellpadding="0" cellspacing="0" border="0" class="listing W_639">
+                        	<tr>
+                                <td colspan="5" style="height:30px;">
+                                    <ul class="listing2_action hidden">
+                                        <li><a title="Lên" class="act_len" href="#">Lên</a></li>
+                                        <li><a title="Xuống" class="act_xuong" href="#">Xuống</a></li>
+                                        <li><a title="Chèn" class="act_chen" href="#">Chèn</a></li>
+                                        <li><a title="Cắt" class="act_cat" href="#">Cắt</a></li>
+                                        <li><a title="Nhập file" class="act_nhapfile" href="#">Nhập file</a></li>
+                                        <li><a title="Số dư" class="act_sodu" href="#">Số dư</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="no_co">
+                            <span>NỢ</span>
+                            <input type="text" class="w_128 yellow" value="2.500.700">
+                            <span>CÓ</span>
+                            <input type="text" class="w_128 yellow" value="1.726.500.782">
+                        </div>
+                    </div>
+                </form>
+                
+                <div class="bottom_btn clearfix">
+                    <ul class="add_span" data-child="a" data-dir="1">
+                        <li class="btn_nhap"><a href="#"><em>N</em>hập</a></li>
+                        <li class="btn_moi"><a href="#"><em>M</em>ới</a></li>
+                        <li class="btn_xoa"><a href="#"><em>X</em>óa</a></li>
+                        <li class="btn_inra"><a href="#"><em>I</em>n ra</a></li>
+                        <li class="btn_timkiem"><a href="#"><em>T</em>ìm kiếm</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="right_col right_1">
+                <table cellpadding="0" cellspacing="1" border="0" width="100%" class="listing_2">
+                    <tr>
+                        <th class="col_1">LCT</th>
+                        <th class="col_2">Số chứng từ</th>
+                        <th class="col_3">Số tiền</th>
+                    </tr>
+                    <tr>
+                        <td class="col_1">01</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">02</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">03</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">04</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">05</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">06</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">07</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">08</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">09</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">10</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">11</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">12</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">13</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">14</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                    <tr>
+                        <td class="col_1">15</td>
+                        <td class="col_2">010123</td>
+                        <td class="col_3">2.350.450</td>
+                    </tr>
+                </table>
+                
+                <div id="pager_controller" class="cc"><a href="#"><img src="table_btn.jpg" width="100%"></a></div>
+            </div>
+        </div>
+    </div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="../js/jquery.mousewheel.js"></script>
+    <script src="../js/jquery.jscrollpane.min.js"></script>
+    <script src="../js/form.js"></script>
+</body>
+</html>
