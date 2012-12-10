@@ -6,7 +6,7 @@ $(document).ready(function(){
 		_preventHashAnchor();
 		_addSpanDeco();
 		
-		//_resizeWindow();
+		setTimeout("_resizeWindow()", 300);
 	});
 });
 
@@ -23,11 +23,17 @@ function initTableBottomBtn(){
 }
 
 function _resizeWindow(){
-	var w = $(window).width();
-	var h = $('.fe').height();
-	//console.log(w, h);
-	$(window).height(h-400);
-	//window.resizeTo(w+40, h+100);
+	var innerWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    var innerHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+    
+    var targetWidth = document.getElementById('popup_wrapper').offsetWidth;
+    var targetHeight = document.getElementById('popup_wrapper').offsetHeight;
+    
+    var left = parseInt((screen.availWidth/2) - (targetWidth/2));
+    var top = parseInt((screen.availHeight/2) - (targetHeight/2));
+    window.moveTo(left,top);
+    
+    window.resizeBy(targetWidth-innerWidth, targetHeight-innerHeight);
 }
  
  

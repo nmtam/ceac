@@ -5,6 +5,10 @@
 	width:1000px;
 	min-height:300px;
 }
+#popup_wrapper{
+	float:left; width:1000px;
+	padding-bottom:30px; overflow:hidden;
+}
 #form_header {
 	height:53px; border-bottom:1px solid #fff;
 	background-color:#898989; margin-bottom:14px;

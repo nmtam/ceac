@@ -2,8 +2,8 @@
  * Quy uoc: cac ham bat dau voi _ deu la cac ham xu ly giao dien
  */
 
-var popup_w = 1000,
-	popup_h = 720;
+var popup_w = 300,
+	popup_h = 300;
 var main_biz_delay = 900000; // 15 min
 
 $(document).ready(function(){
