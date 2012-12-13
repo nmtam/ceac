@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
 	initTableBottomBtn();
-	sendTabKeyWhenEnter();
 	initJSPanel();
+	//sendTabKeyWhenEnter();
 	
 	addOnLoadEvent(function(){
 		_preventHashAnchor();
@@ -22,7 +22,7 @@ function initJSPanel(){
 		});
 	}
 }
-
+/*
 function sendTabKeyWhenEnter(){
 	// send TAB key when user press ENTER on input box	
 	var form = $('form');	
@@ -43,7 +43,7 @@ function sendTabKeyWhenEnter(){
 		}
 	}); 
 }
-
+*/
 
 function initTableBottomBtn(){
 	$('div.listing').hover(
